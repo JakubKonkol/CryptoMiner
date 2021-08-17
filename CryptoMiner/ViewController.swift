@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         static var ZTX220TPWR = 1 // (/10)
         static var MINEPRO2000PWR = 0.4
         static var CENA_Z220 = 200
+        static var CENA_Z220T = 500
         
         
     
