@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var MINERS: UIButton!
     @IBOutlet weak var SELL_KC: UIButton!
     @IBOutlet weak var SHOP: UIButton!
+    let userDefaults = UserDefaults()
+    
     // GLOBAL VARIABLES
     struct Zmienne {
         static var Z_KC_CENA = 1000
@@ -49,11 +51,14 @@ class ViewController: UIViewController {
         // *******************************************************************
         //Zmienne.Z_KC_HR = (Zmienne.KUPIONE_ZTX220 * Zmienne.ZTX220PWR)
         KC_HR.text = String(Zmienne.Z_KC_HR)
-        
+        // timery
         Timer2 = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(refresh), userInfo: nil, repeats: true)
        
         TimerGodz = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(refresh2), userInfo: nil, repeats: true)
         TimerKurs = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(refreshKurs), userInfo: nil, repeats: true)
+        //timery\>
+        load()
+        
         
     }
     func liczenie(){
@@ -66,6 +71,36 @@ class ViewController: UIViewController {
         Zmienne.Z_KC_HR = wynik
         
     }
+    func save(){
+        userDefaults.setValue(Zmienne.Z_WALLET, forKey: "kasa")
+        userDefaults.setValue(Zmienne.Z_KC_OWN, forKey: "kc_own")
+        userDefaults.setValue(Zmienne.Z_KC_HR, forKey: "kc_hr")
+        userDefaults.setValue(Zmienne.KUPIONE_ZTX220, forKey: "k_z220")
+        userDefaults.setValue(Zmienne.KUPIONE_ZTX220T, forKey: "k_z220t")
+        
+        
+        
+    }
+    func load(){
+        if let kasa = userDefaults.value(forKey: "kasa") as? Int {
+            Zmienne.Z_WALLET = kasa }
+        if let kc_own = userDefaults.value(forKey: "kc_own") as? Double {
+            Zmienne.Z_KC_OWN = kc_own
+        }
+        if let kc_hr = userDefaults.value(forKey: "kc_hr") as? Double {
+            Zmienne.Z_KC_HR = kc_hr
+        }
+        if let k_z220 = userDefaults.value(forKey: "k_z220") as? Int {
+            Zmienne.KUPIONE_ZTX220 = k_z220
+        }
+        if let k_z220t = userDefaults.value(forKey: "k_z220t") as? Int{
+            Zmienne.KUPIONE_ZTX220T = k_z220t
+        }
+        
+        
+    }
+    
+    
     
     @objc func refresh2(){
         Zmienne.Z_KC_OWN = (Zmienne.Z_KC_OWN + (Zmienne.Z_KC_HR)/6)
@@ -77,6 +112,8 @@ class ViewController: UIViewController {
     }
     @objc func refresh(){
         liczenie()
+        save()
+        load()
         KC_CENA.text = String(Zmienne.Z_KC_CENA)
         KC_OWN.text = String(format: "%.2f", Zmienne.Z_KC_OWN)
         KC_HR.text = String(format: "%.2f", Zmienne.Z_KC_HR)
@@ -110,6 +147,15 @@ class ViewController: UIViewController {
             self.present(alert, animated: true)
         }
     }
+    @IBAction func RESET(_ sender: Any) {
+        Zmienne.Z_WALLET = 2000
+        Zmienne.Z_KC_HR = 0
+        Zmienne.Z_KC_OWN = 0
+        Zmienne.KUPIONE_ZTX220 = 0
+        Zmienne.KUPIONE_ZTX220T = 0
+        
+    }
+    
     
 
 }
