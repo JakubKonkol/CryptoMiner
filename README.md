@@ -1,5 +1,9 @@
 # CryptoMiner
 ---------------
+# 1.0 beta 3 
+- dodane zostały zapisy (po wyjsciu masz swoj stan kasy itp)
+- dodane automatyczne zapisywanie i wczytywanie (znowu w tym timerze zjebanym)
+- dodany developerski guzik reset ktory resetuje stan gry do poczatku (potem bedzie w innym ViewControllerze)
 # 1.0 beta 2 
 - dodana karta ztx220 turbo (xd)
 - funkcja liczenia juz poprawnie sie wykonuje
