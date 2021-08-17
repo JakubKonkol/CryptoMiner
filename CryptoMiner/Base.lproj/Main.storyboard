@@ -311,13 +311,6 @@
                                     <action selector="KUP_220:" destination="1ge-O4-zIA" eventType="touchUpInside" id="rIh-bh-utd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4V-sh-uIN">
-                                <rect key="frame" x="166" y="214" width="71" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="BUY 500$">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLF-y5-uBW">
                                 <rect key="frame" x="326" y="214" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -415,13 +408,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pjj-NW-HwB">
+                                <rect key="frame" x="153" y="214" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="kup 2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="KUP_Z220T:" destination="1ge-O4-zIA" eventType="touchUpInside" id="lM1-M2-Q4H"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3AT-dc-Toq"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                     </view>
                     <connections>
                         <outlet property="wallet" destination="JBd-ne-2vH" id="Ppq-9H-Xtn"/>
-                        <outlet property="z220_button" destination="CjN-1a-Tj7" id="FWm-zu-Oou"/>
+                        <outlet property="z220_button" destination="CjN-1a-Tj7" id="xVH-YV-oEi"/>
+                        <outlet property="z220t_button" destination="Pjj-NW-HwB" id="UzU-CB-vPG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mwb-8K-hfQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

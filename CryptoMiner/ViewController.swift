@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         static var KUPIONE_ZTX220T = 0
         static var KUPIONE_MINEPRO2000 = 0
         static var ZTX220PWR: Double = 0.1 // (/100)
-        static var ZTX220TPWR = 1 // (/10)
+        static var ZTX220TPWR: Double = 0.3 // (/10)
         static var MINEPRO2000PWR = 0.4
         static var CENA_Z220 = 200
         static var CENA_Z220T = 500
@@ -59,7 +59,10 @@ class ViewController: UIViewController {
     func liczenie(){
         let x = Zmienne.KUPIONE_ZTX220
         let y = Zmienne.ZTX220PWR
-        let wynik = (Double(x) * y)
+        let z220t = Zmienne.KUPIONE_ZTX220T
+        let z220pw = Zmienne.ZTX220TPWR
+        
+        let wynik = (Double(x) * y) + (Double(z220t) * z220pw)
         Zmienne.Z_KC_HR = wynik
         
     }
