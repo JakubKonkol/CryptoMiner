@@ -21,6 +21,7 @@
 		3B82278F26CA9D8A008B5C1A /* todo in Resources */ = {isa = PBXBuildFile; fileRef = 3B82278E26CA9D8A008B5C1A /* todo */; };
 		3B82279126CAB36D008B5C1A /* MinersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82279026CAB36D008B5C1A /* MinersViewController.swift */; };
 		3B82279326CAB839008B5C1A /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82279226CAB839008B5C1A /* ShopViewController.swift */; };
+		3BB68E7026CBFDC800808217 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB68E6F26CBFDC800808217 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		3B82278E26CA9D8A008B5C1A /* todo */ = {isa = PBXFileReference; lastKnownFileType = text; path = todo; sourceTree = "<group>"; };
 		3B82279026CAB36D008B5C1A /* MinersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinersViewController.swift; sourceTree = "<group>"; };
 		3B82279226CAB839008B5C1A /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		3BB68E6F26CBFDC800808217 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				3B82276026CA96EB008B5C1A /* Main.storyboard */,
 				3B82275E26CA96EB008B5C1A /* ViewController.swift */,
 				3B82279026CAB36D008B5C1A /* MinersViewController.swift */,
+				3BB68E6F26CBFDC800808217 /* InfoViewController.swift */,
 				3B82279226CAB839008B5C1A /* ShopViewController.swift */,
 				3B82275A26CA96EB008B5C1A /* AppDelegate.swift */,
 				3B82275C26CA96EB008B5C1A /* SceneDelegate.swift */,
@@ -281,6 +284,7 @@
 				3B82275B26CA96EB008B5C1A /* AppDelegate.swift in Sources */,
 				3B44A4CE26CAD2CC009532A7 /* GradientView3.swift in Sources */,
 				3B82279326CAB839008B5C1A /* ShopViewController.swift in Sources */,
+				3BB68E7026CBFDC800808217 /* InfoViewController.swift in Sources */,
 				3B82279126CAB36D008B5C1A /* MinersViewController.swift in Sources */,
 				3B82278B26CA9A5A008B5C1A /* GradientView.swift in Sources */,
 				3B44A4CC26CAD276009532A7 /* GradientView2.swift in Sources */,
