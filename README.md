@@ -1,6 +1,6 @@
 # CryptoMiner
 ---------------
-# VERSION 1.0 beta 2 
+# 1.0 beta 2 
 - dodana karta ztx220 turbo (xd)
 - funkcja liczenia juz poprawnie sie wykonuje
 - kanesacoin/min odswieza sie co 10 sekund i pokazuje juz poprawne wartosci po przecinku 
@@ -14,5 +14,5 @@
 - Zegary sa lekko opoznione wzgledem siebie (moze zrobic jeden zegar?)
 
 
-# VERSION 1.0 beta 1
+# 1.0 beta 1
 - initial release 
