@@ -15,15 +15,16 @@ class InfoViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func reset(_ sender: Any) {
+        ViewController.Zmienne.Z_WALLET = 2000
+        ViewController.Zmienne.Z_KC_HR = 0
+        ViewController.Zmienne.Z_KC_OWN = 0
+        ViewController.Zmienne.KUPIONE_ZTX220 = 0
+        ViewController.Zmienne.KUPIONE_ZTX220T = 0
+        ViewController.Zmienne.CENA_Z220 = 200
+        ViewController.Zmienne.CENA_Z220T = 500
     }
-    */
+    
+
 
 }
