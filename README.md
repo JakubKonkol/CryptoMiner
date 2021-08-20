@@ -1,5 +1,17 @@
 # CryptoMiner
 ---------------
+# 1.0 beta 5
+- usuniety background fetch 
+- usuniety app runtime 
+- usunieta zmienna CurrentDate: Date = Date()
+- usuniete niepotrzebne funkcje
+- dodany w pełni sprawny system aktualizacji posiadanych kanesacoinow w tle
+- dodany w pelni sprawy system przetrzymywania czasu ktory minal od zamkniecia aplikacji do jej uruchomienia (TotalTime)
+- dodany ViewController ustawien (info_vc/InfoViewController)
+- guzik reset przeniesiony do ustawien
+- uporzadkowany kod/usuniete nieuzywane zmienne
+- znaczna poprawa optymalizacji (timery zostały ograniczone tylko do wymaganych danych)
+
 # 1.0 beta 4
 - poprawione działanie zapisów (zapisy zapisuja juz tez aktualne ceny)
 - ceny i guziki nie resetuja się po wyjsciu z aplikacji
